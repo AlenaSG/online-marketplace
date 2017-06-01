@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -26,7 +27,7 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="store-item" value="smartphone">
+          <input type="radio" name="store-item" id="store-item" value="smartphone">
           Smartphone
         </label>
       </div>
@@ -45,6 +46,10 @@
         <button type="submit" class="btn">Confirm</button>
       </form>
 
+      <div class="well" id="receipt">
+        <h3>Here's your receipt:</h3>
+        <p>Thank you, <span class="name"></span> for shopping with us! Your <span class="item"></span> will arrive in five days at <span class="address"></span>.</p>
+      </div>
     </div>
 
   </body>
