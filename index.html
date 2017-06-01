@@ -6,9 +6,46 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>A letter</title>
-</head>
+    <title>Online Marketplace</title>
+  </head>
   <body>
-    
+    <div class="container">
+      <h1>Welcome to Online Electronics Store!</h1>
+      <h3>What are you shopping for today?</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="store-item" value="laptop">
+          Laptop
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="store-item" value="tablet">
+          Tablet
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="store-item" value="smartphone">
+          Smartphone
+        </label>
+      </div>
+
+      <h3>Please put in your shipping information: </h3>
+
+      <form id="user-info">
+        <div class="form-group">
+          <label for="full-name">Full Name: </label>
+          <input id="full-name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Address: </label>
+          <input id="address" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Confirm</button>
+      </form>
+
+    </div>
+
   </body>
 </html>
